@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$main-color: rgb(65, 65, 65);
+$sac-color: rgb(196, 189, 189);
+$main-font: "Roboto", sans-serif;
+$mar-pad-size: 10px;
+$width-size: 50%;
+$fo-size: 1.3rem;
+
+@mixin bg-img($image, $repeat) {
+	background: {
+		image: $image;
+		size: cover;
+		repeat: $repeat;
+	}
+}
+
+@mixin center {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: $main-font;
+}
+
+div.container {
+	@include bg-img(url("images/background.jpg"), no-repeat);
+	@include center;
+	img {
+		width: $width-size;
+		margin-top: $mar-pad-size;
+	}
+	div.heading {
+		@include bg-img(url("images/transparent_white.png"), repeat);
+		color: $main-color;
+		margin: $mar-pad-size;
+		text-align: center;
+		width: $width-size;
+		border: 2px solid $main-color;
+		border-radius: $mar-pad-size;
+		padding: $mar-pad-size;
+		font-size: $fo-size;
+	}
+}
+
+form {
+	@include center;
+	margin: $mar-pad-size;
+	padding: $mar-pad-size;
+	border-radius: $mar-pad-size;
+	background-color: $sac-color;
+	width: $width-size;
+	h2,
+	p {
+		text-align: center;
+		margin: $mar-pad-size;
+		font-size: $fo-size;
+		color: $main-color;
+	}
+	label,
+	input[type="submit"] {
+		border: none;
+		text-transform: uppercase;
+		width: $width-size;
+		background-color: $main-color;
+		color: $sac-color;
+		padding: $mar-pad-size;
+		border-top-right-radius: $mar-pad-size;
+		border-top-left-radius: $mar-pad-size;
+	}
+	input[type="submit"] {
+		font-style: italic;
+		font-size: $fo-size;
+		margin-bottom: $mar-pad-size;
+		cursor: pointer;
+	}
+	input {
+		border: none;
+		outline: none;
+		width: $width-size;
+		margin-bottom: $mar-pad-size;
+		padding: $mar-pad-size;
+		border-bottom-right-radius: $mar-pad-size;
+		border-bottom-left-radius: $mar-pad-size;
+	}
+}
+
+footer {
+	p {
+		color: $sac-color;
+		margin: $mar-pad-size;
+	}
+}

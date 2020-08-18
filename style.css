@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+div.container {
+	background-image: url("images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+div.container img {
+	width: 50%;
+	margin-top: 10px;
+}
+div.container div.heading {
+	background-image: url("images/transparent_white.png");
+	background-size: cover;
+	background-repeat: repeat;
+	color: #474747;
+	margin: 10px;
+	text-align: center;
+	width: 50%;
+	border: 2px solid #474747;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 1.3rem;
+}
+
+form {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #a3a3a3;
+	width: 50%;
+}
+form h2,
+form p {
+	text-align: center;
+	margin: 10px;
+	font-size: 1.3rem;
+	color: #474747;
+}
+form label,
+form input[type="submit"] {
+	border: none;
+	text-transform: uppercase;
+	width: 50%;
+	background-color: #474747;
+	color: #a3a3a3;
+	padding: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+form input[type="submit"] {
+	font-style: italic;
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+form input {
+	border: none;
+	outline: none;
+	width: 50%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+footer p {
+	color: #a3a3a3;
+	margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
